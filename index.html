@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ADA Clothes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/Black_logo-removebg-preview.png" alt="Logo" class="logo-img">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop/shop.html">Shop</a></li>
+            <li><a href="Blog/blog.html">Blog</a></li>
+            <li><a href="About us/about.html">About us</a></li>
+            <li><a href="Contact us/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="ls-btn">
+            
+
+        
+
+        
+<button id="openLoginModalBtn">Login</button>
+<button id="openSignupModalBtn">Sign Up</button>
+
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close login-close">&times;</span>
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close signup-close">&times;</span>
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
+            <div class="input-group">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required minlength="4" maxlength="8">
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Confirm-Password</label>
+                <input type="password" id="signup-password" name="cpassword" required minlength="4" maxlength="8" >
+            </div>
+            <button type="submit" class="signup-btn" onclick="checkpwd()">Sign Up</button>
+        </form>
+    </div>
+    
+</div>
+
+        
+    </div>
+    <div class="cart-icon">
+        <a href="/cart/cart.html"><img src="./images/yellow-cart.png" alt="Cart"></a>
+    </div>
+    </nav>
+
+    <section class="promo-section">
+        <div class="promo-content">
+            <h2>Trade-in-offer</h2>
+            <h1>Super value deals<br> <span>On all products</span></h1>
+            <p>Save more with coupons & up to 70% off!</p>
+            <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+        <div class="promo-image">
+            <img src="./images/hero4-removebg-preview.png" alt="Promo Image">
+        </div>
+
+        
+    </section>
+    <div class="container">
+        <div class="card">
+            <img src="./images/f1.png" alt="Free Shipping">
+            <p class="label">Free Shipping</p>
+        </div>
+        <div class="card">
+            <img src="./images/f2.png" alt="Online Order">
+            <p class="label">Online Order</p>
+        </div>
+        <div class="card">
+            <img src="./images/f3.png" alt="Save Money">
+            <p class="label">Save Money</p>
+        </div>
+        <div class="card">
+            <img src="./images/f4.png" alt="Promotions">
+            <p class="label">Promotions</p>
+        </div>
+        <div class="card">
+            <img src="./images/f5.png" alt="Happy Sell">
+            <p class="label">Happy Sell</p>
+        </div>
+        <div class="card">
+            <img src="./images/f6.png" alt="24/7 Support">
+            <p class="label">24/7 Support</p>
+        </div>
+    </div>
+        
+
+    <div class="newsletter-section">
+        <h2>Sign Up For Newsletters</h2>
+        <p>Get E-mail updates about our latest shop and <span style="color: #FFA500;">special offers.</span></p>
+        <input type="email" class="newsletter-input" placeholder="Your email address">
+        <button class="newsletter-button">Sign Up</button>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Address: 562 Wellington Road, Street 32, San Francisco</p>
+            <p>Phone: +01 2222 365 / (+91) 01 2345 6789</p>
+            <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f">📘</i></a>
+                <a href="#"><i class="fab fa-twitter">🐦</i></a>
+                <a href="#"><i class="fab fa-instagram">📷</i></a>
+                <a href="#"><i class="fab fa-pinterest">📌</i></a>
+                <a href="#"><i class="fab fa-youtube">🎥</i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>My Account</h3>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Install App</h3>
+            <div class="install-app">
+                <img src="../images/download-on-the-app-store4659-removebg-preview.png" alt="App Store">
+                <img src="../images/googleplay-removebg-preview.png" alt="Google Play">
+            </div>
+            <h3>Secured Payment Gateways</h3>
+            <div class="payment-methods">
+                <img src="../images/visa-removebg-preview.png" alt="Visa">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src='main.js'></script>
+</body>
+</html>
